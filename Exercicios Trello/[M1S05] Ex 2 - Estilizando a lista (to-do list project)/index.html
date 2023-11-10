@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="index.css">
+    <title>[M1S05] Ex 2 - Estilizando a lista (to-do list project)</title>
+  </head>
+  <body>
+
+    <h1 id="titulo">[M1S05] Ex 2 - Estilizando a lista (to-do list project)</h1>  
+    <hr>
+
+    <div id="toDoForm">
+      <h1 id="titulo">To Do List</h1>
+      <div>
+        <input type="text" name="taskInput" id="taskInput" placeholder="Digite uma tarefa..."/>
+        <button id="addBtn">Adicionar</button>
+      </div>
+
+      <br>
+      <div>
+        <table id="toDoTable">
+          <tbody>
+            <tr>
+              <td><input type="checkbox" class="checkbox" id="check1" name="check1" value="check" /></td>
+              <td><label class="labelCheck" id="check1Label" for="check1Label">Estudar HTML e CSS</label></td>
+              <td><input type="image" class="removeBtn" id="remove1Btn" src="images/trash.png" title="Excluir" alt="Submit"></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" class="checkbox" id="check2" name="check2" value="check" /></td>
+              <td><label class="labelCheck" id="check2Label" for="check2Label">Estudar Javascript</label></td>
+              <td><input type="image" class="removeBtn" id="remove3Btn" src="images/trash.png" title="Excluir" alt="Submit"></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" class="checkbox" id="check3" name="check3" value="check" /></td>
+              <td><label class="labelCheck" id="check3Label" for="check3Label">Fazer Exercicios</label></td>
+              <td><input type="image" class="removeBtn" id="remove3Btn" src="images/trash.png" title="Excluir" alt="Submit"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
