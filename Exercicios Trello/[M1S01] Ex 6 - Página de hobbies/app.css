@@ -1,0 +1,27 @@
+#fotosBtn{
+    padding: 10px;
+    border-width: 10px;
+    margin: 20px;
+}
+
+#profissionalBtn{
+    padding: 10px;
+    border-width: 10px;
+    margin: 20px;
+}
+
+#hobbiesBtn{
+    padding: 10px;
+    border-width: 10px;
+    margin: 20px;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #d24dff;
+}
+
+
