@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="shortcut icon" href="" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- <style>
+        h1 {
+            color: blue;
+        }
+    </style> -->
+
+    <title>Documento</title>
+</head>
+<body>
+    <h1>Olá, Mundo</h1>
+    <h1 id="segundoCabecalho">outro h1</h1>
+    <h2>Cabeçalho de nível 2 &lt;h2&gt; </h2>
+    <h3>Cabeçalho de <span>nível</span> 3</h3>
+    <h4>Cabeçalho de nível 4</h4>
+    <h5>Cabeçalho de nível 5</h5>
+    <h6>Cabeçalho de nível 6</h6>
+
+    <p>Estrutura básica de um documento HTML.</p><p>outro P para testar</p>
+    <br>
+    <hr>
+    <p style="color: blue;">Testando o live server</p>
+    <p>🤓</p>
+    <!-- <p>&#x1F913</p> -->
+
+    <!-- <img src="https://images.unsplash.com/photo-1682687220305-ce8a9ab237b1?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Foto mostrando antílopes deitados."> -->
+    <img class="imagem" src="images/antilopes.jpg" alt="Foto mostrando antílopes deitados.">
+    <br>
+
+    <a href="about.html" target="_self">Ver informações sobre a página.</a>
+    <br>
+    <button><a href="about.html">About</a></button>
+
+    <div>
+        <h3 id="hFlutuante">Subtitulo</h3>
+        <p id="pFlutuante">texto de exemplo na div</p>
+    </div>
+
+    <div id="containerListaCompras">
+        <p>Lista de compras:</p>
+        <ul>
+            <li class="listaCompras">Arroz</li>
+            <li class="listaCompras">Carne</li>
+            <li class="listaCompras">Feijão</li>
+        </ul>
+    </div>
+
+    <div id="containerTabelaCopa">
+        <p id="pCopa">Tabela classificatória pra Copa</p>
+        <ol id="tabelaCopa">
+            <li>Argentina</li>
+            <li>Uruguai</li>
+            <li>Brasil</li>
+        </ol>
+    </div>
+
+    <div>
+        <form action="" method="">
+            <fieldset>
+                <label for="nomeUsuario">Nome:</label> <input type="text" id="nomeUsuario"> <br> 
+                <label for="sobrenomeUsuario">Sobrenome:</label> <input id="sobrenomeUsuario" type="text"> <br>
+                <label for="nascimentoUsuario">Data Nascimento:</label> <input id="nascimentoUsuario" type="date"> <br>
+                <label for="times">Time que torce:</label>
+                <select name="" id="times">
+                    <optgroup label="RJ">
+                        <option value="Vasco">Vasco</option>
+                        <option value="Botafogo">Botafogo</option>
+                    </optgroup>
+                    <optgroup label="SP">
+                        <option value="São Paulo">São Paulo</option>
+                        <option value="Corinthians">Corinthians</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Dados de acesso</legend>
+                <label for="username">Username:</label> <input id="username" type="text" placeholder="Digite um nome de usuário">
+                <label for="senha">Senha:</label> <input id="senha" type="password" placeholder="utilize letras e números"> <br>
+            </fieldset>
+            <fieldset>
+                <button disabled> <strong>Enviar </strong></button> <br>
+                <button type="reset"> <em>Limpar</em>  </button>
+            </fieldset>    
+        </form>
+    </div>
+
+    <textarea cols="50" rows="5"></textarea>
+</body>
+</html>

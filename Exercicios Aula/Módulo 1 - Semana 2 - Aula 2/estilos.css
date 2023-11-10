@@ -1,0 +1,82 @@
+body {
+    font-size: 14pt;
+}
+
+h1 {
+    font-size: 20pt;
+}
+
+h3 {
+    color: brown;
+    font-size: 16pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#segundoCabecalho {
+    font-size: 14pt;
+}
+
+p {
+    color: red;
+}
+
+#pFlutuante {
+    float: right;
+}
+
+#hFlutuante {
+    float: left;
+}
+
+
+#pCopa {
+    color: #dcf808;
+    letter-spacing: 2px;
+}
+
+ul > .listaCompras {
+    color: rgba(4, 169, 4, 0.5);
+    list-style: square;
+    font-size: 0.8rem;
+}
+
+#containerTabelaCopa li {
+    color: blue;
+    font-size: 0.8em;
+}
+
+#containerTabelaCopa {
+    font-size: 16pt;
+}
+
+#tabelaCopa {
+    list-style:lower-roman;
+}
+
+#containerListaCompras {
+    margin: 2px;
+    /* margin-top: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px; */
+    border: 5px solid black;
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: black; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font: 16pt Verdana bold; */
+    width: 200px;
+    height: 150px;
+    background: url(/images/tomate.jpg) no-repeat;
+    background-size: 100%;
+    clear: both;
+}
+
+#username {
+    text-align: center;
+    font-weight: bold;
+}
+
+body {
+    font-size: 16pt;
+}
