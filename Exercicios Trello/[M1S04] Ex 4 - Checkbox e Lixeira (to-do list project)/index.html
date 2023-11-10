@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="index.css">
+    <title>[M1S04] Ex 4 - Checkbox e Lixeira (to-do list project)</title>
+  </head>
+  <body>
+
+    <h1 id="titulo">[M1S04] Ex 4 - Checkbox e Lixeira (to-do list project)</h1>  
+    <hr>
+
+    <div id="toDoForm">
+      <h1 id="titulo">To Do List</h1>
+      <div>
+        <input type="text" name="taskInput" id="taskInput" placeholder="Digite uma tarefa..."/>
+        <button id="addBtn">Adicionar</button>
+      </div>
+
+      <br>
+      <div>
+        <table id="toDoTable">
+          <tbody>
+            <tr>
+              <td><input type="checkbox" id="check1" name="check1" value="check" /></td>
+              <td><label for="check1Label">Estudar HTML e CSS</label></td>
+              <td><button id="remove1Btn">x</button></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="check2" name="check2" value="check" /></td>
+              <td><label for="check2Label">Estudar Javascript</label></td>
+              <td><button id="remove2Btn">x</button></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="check3" name="check3" value="check" /></td>
+              <td><label for="check3Label">Fazer Exercicios</label></td>
+              <td><button id="remove3Btn">x</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
