@@ -1,0 +1,17 @@
+#toDoForm {
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+#toDoTable {
+    margin: 0 auto;
+    text-align: center;
+    width: 20%;
+    /* height: 300px;*/
+}
+
+.removeBtn {
+    max-height: 32px;
+    max-height: 32px;
+}
