@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="index.css">
+    <title>[M1S06] Ex 1 - Melhorando a interatividade (to-do list project)</title>
+  </head>
+  <body>
+
+    <h1 id="titulo">[M1S06] Ex 1 - Melhorando a interatividade (to-do list project)</h1>  
+    <hr>
+
+    <div id="toDoForm">
+      <h1 id="titulo">To Do List</h1>
+      <div>
+        <input type="text" name="taskInput" id="taskInput" placeholder="Digite uma tarefa..."/>
+        <input type="image" class="addBtn" id="addBtn" src="images/add.png" title="Adicionar" alt="Submit">
+      </div>
+
+      <br>
+      <div>
+        <table id="toDoTable">
+          <tbody id="tbody">
+            <tr> 
+              <td class="border"><input type="checkbox" class="checkbox" id="check1" name="check1" value="check" /></td>
+              <td class="border"><label class="labelCheck" id="check1Label" for="check1Label">Estudar HTML e CSS</label></td>
+              <td><input type="submit" action="" class="removeBtn" id="remove1Btn" src="images/trash.png" title="Excluir" alt="Submit"></td>
+            </tr>
+            <tr>
+              <td class="border"><input type="checkbox" class="checkbox" id="check2" name="check2" value="check" /></td>
+              <td class="border"><label class="labelCheck" id="check2Label" for="check2Label">Estudar Javascript</label></td>
+              <td><input type="image" class="removeBtn" id="remove3Btn" src="images/trash.png" title="Excluir" alt="Submit"></td>
+            </tr>
+            <tr>
+              <td class="border"><input type="checkbox" class="checkbox" id="check3" name="check3" value="check" /></td>
+              <td class="border"><label class="labelCheck" id="check3Label" for="check3Label">Fazer Exercicios</label></td>
+              <td><input type="image" class="removeBtn" id="remove3Btn" src="images/trash.png" title="Excluir" alt="Submit"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
