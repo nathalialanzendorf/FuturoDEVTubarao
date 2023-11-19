@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="index.css">
+    <title>Exemplo Script</title>
+  </head>
+  <body>
+    <h1>Módulo 1 - Semana 5 - Aula 1</h1>
+
+    <div>
+      <input type="text" name="inputText" id="inputText" placeholder="Digite uma tarefa..."/>
+      <button onclick="save()" id="addBtn">Adicionar</button>
+    </div>
+
+    <div>
+      <table id="toDoTable" border="1">
+        <tbody>
+          <tr>
+            <td class="border"><input type="checkbox" class="checkbox" id="check1" name="check1" value="check" /></td>
+            <td class="border"><label class="labelCheck" id="check1Label" for="check1Label">Estudar HTML e CSS</label></td>
+            <td><input type="image" class="removeBtn" id="remove1Btn" src="images/trash.png" title="Excluir" alt="Submit"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- 
+    <div>
+      <p onclick="mostraOlaDev()" id="pElementId" class="pElementClass">Clique aqui</p>
+      <input type="text" onkeydown="mostraEvento(event)" id="inputElement" class="inputElementClass"/>
+    </div>
+    -->
+    <script src="app.js"></script>
+  </body>
+</html>
