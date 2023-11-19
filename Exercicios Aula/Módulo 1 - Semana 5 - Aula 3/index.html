@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Tarefas</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <div id="app_container">
+      <h1>Lista de Tarefas</h1>
+
+      <div id="form_container">
+        <input type="text" name="tarefa" id="item_input" placeholder="Digite uma tarefa..." />
+        <button id="add_button">Adicionar</button>
+      </div>
+
+      <ul id="items_element">
+        <!--
+        <li class="item">
+          <input type="checkbox" />
+          <span>Lavar</span>
+          <button>🗑️</button>
+        </li>
+        -->
+      </ul>
+      <h2>Quantidade de tarefas <span id="total_items"></span></h2>
+    </div>
+  </body>
+</html>
