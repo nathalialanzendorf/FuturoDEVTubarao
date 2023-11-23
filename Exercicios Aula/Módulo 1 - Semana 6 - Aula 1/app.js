@@ -2,9 +2,9 @@ const primaryLabelElement = document.getElementById("primaryLabel");
 const secondLabelElement = document.getElementById("secondLabel");
 const lastLabelElement = document.getElementById("lastLabel");
 
-const primaryButtonElement = document.getElementById("primaryButton");
-const secondButtonElement = document.getElementById("secondButton");
-const lastButtonElement = document.getElementById("LastButton");
+const primaryButtonElement = document.querySelector("#primaryButton");
+const secondButtonElement = document.querySelector("#secondButton");
+const lastButtonElement = document.querySelector("#lastButton");
 
 //primaryButtonElement.addEventListener('click', changeColor);
 function changeColor() {
@@ -22,10 +22,11 @@ function openAlert() {
 
 lastButtonElement.addEventListener('click', createNewLabel);
 function createNewLabel() {
+    document.body.style.background = "gray";
     const elemento = document.createElement("p");
     elemento.innerHTML = "Novo!";
-  //  document.body.appendChild(elemento);
-    document.body.insertBefore(elemento, lastButtonElement);
+   document.body.appendChild(elemento);
+   // document.body.insertBefore(elemento, lastButtonElement);
 }
 
 // por "tag"

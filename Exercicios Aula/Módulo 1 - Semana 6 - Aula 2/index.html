@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+   
+    <title>Módulo 1 - Semana 6 - Aula 2</title>
+  </head>
+  <body>
+    <h1>Módulo 1 - Semana 6 - Aula 2</h1>
+    <hr />
+
+    <div>
+      <label id="primaryLabel">Label 1</label>
+      <button name="primaryButton" onclick="timeout()">Botão 1</button>
+    </div>
+
+    <br>
+    <div>
+      <label id="secondLabel">Label 2</label>
+      <button id="secondButton">Botão 2</button>
+    </div>
+    <div id="thirdDiv">
+      <label id="thirdLabel">Label 3</label>
+      <button id="thirdButton">Remover label 3</button>
+    </div>
+    <div id="lastDiv">
+      <button id="lastButton">Criar label 4</button>
+    </div>
+    <div id="timeDiv">
+      <label id="time">Sem horário</label>
+      <button id="startTimeButton">Iniciar relógio</button>
+      <button id="pauseTimeButton">Parar relógio</button>
+    </div>
+    <br>
+    <fieldset>
+      <legend>Localstorage</legend>
+      <input type="text" id="nameInput" placeholder="Digite o seu nome:" />
+      <br>
+      <button id="saveButton">Salvar</button>
+      <button id="removeButton">Remover</button>
+      <button id="showButton">Visualizar</button>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Session</legend> 
+      <input type="text" id="nameSessionInput" placeholder="Digite o seu nome:" />
+      <br>
+      <button id="saveSessionButton">Salvar</button>
+      <button id="removeSessionButton">Remover</button>
+      <button id="showSessionButton">Visualizar</button>
+    </fieldset>
+
+    <br>
+    <fieldset>
+      <legend>Localstorage List </legend> 
+      <input type="text" id="nameListInput" placeholder="Digite um item" />
+      
+      <br>
+      <button id="saveListButton">Adicionar</button>
+      <button id="removeListButton">Remover</button>
+    </fieldset>
+
+    <script src="app.js"></script>
+  </body>
+</html>
