@@ -1,0 +1,15 @@
+:root{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+
+  width: 100%;
+  min-height: 100%;
+  font-family: sans-serif;
+}
+
+html, body, div {
+  font-family: sans-serif;
+}
+
