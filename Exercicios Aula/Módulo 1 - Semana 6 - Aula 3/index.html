@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <!--Baixa script enquanto renderizar o html mesmo sem concluir e executa o script, nao respeitando a ordem do script  -->
+    <script src="script1.js" defer></script>
+    <!--Baixa script enquanto renderizar o html e executa depois de concluir e respeitando a ordem do script  -->
+    <script src="script2.js" defer></script>
+  
+    <title>Módulo 1 - Semana 6 - Aula 3</title>
+  </head>
+  <body>
+    <h1>Módulo 1 - Semana 6 - Aula 3</h1>
+    <hr />
+
+    <br>
+    <fieldset>
+      <legend>Tag script</legend>
+      <label>Executando script: </label>
+      <label id="description"></label>
+      <br>
+      <br>
+      <button id="script1">Executar script1</button>
+      <button id="script2">Executar script2</button>
+    </fieldset>
+
+  </body>
+</html>
