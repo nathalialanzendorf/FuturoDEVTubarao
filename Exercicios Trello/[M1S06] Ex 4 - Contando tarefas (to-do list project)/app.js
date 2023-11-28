@@ -6,7 +6,7 @@ const totalItems = document.getElementById("total_items");
 let items = [
   {
     name: "Lavar a roupa",
-    finished: true,
+    finished: false,
   },
   {
     name: "Secar a roupa",
@@ -68,5 +68,8 @@ function addItems() {
     reloadPage();
   }
 }
+
+addButtonElement.addEventListener("click", addItems);
+
 
 addButtonElement.addEventListener("click", addItems);
