@@ -21,6 +21,43 @@ function criaListagem(list) {
   });
 }
 
+/*
+
+
+function mockData() { 
+  const data = {
+    "results": [
+      {
+        "name": "Luke Skywalker"
+      }, 
+      {
+        "name": "C-3PO"
+      }
+  ]};
+
+  return data;
+}
+
+async function getList() {
+  const request = new Promise((resolve, reject) => {
+    resolve(mockData());
+    //reject(mockData());
+
+  }).then((response) => {
+    console.log("Buscando pessoas...");
+    const data = response;
+    criaListagem(data.results);
+
+  }).catch((error) => { 
+    console.log("Ocorreu um erro ao buscar pessoas...", error)
+
+  }).finally(() => {
+    console.log("Terminou a promisse para buscar pessoas...");
+  }); 
+}
+
+/*
+
 
 async function getList() {
   const request = fetch("https://swapi.dev/api/people");
@@ -37,3 +74,4 @@ async function getList() {
       console.log("Terminou a promisse para buscar pessoas...");
     }
 }
+*/

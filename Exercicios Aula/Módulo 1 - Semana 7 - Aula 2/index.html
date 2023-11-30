@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <!--Baixa script enquanto renderizar o html mesmo sem concluir e executa o script, nao respeitando a ordem do script  -->
+    <script src="script.js" async></script>
+    <!--Baixa script enquanto renderizar o html e executa depois de concluir e respeitando a ordem do script  -->
+    <!--<script src="script2.js" defer></script>-->
+  
+    <title>Módulo 1 - Semana 7 - Aula 2</title>
+  </head>
+  <body>
+    <h1>Módulo 1 - Semana 7 - Aula 2</h1>
+    <hr />
+
+    <fieldset>
+      <legend>Listagem</legend>
+      </br>
+      <button id="findButton">Listar</button>
+      <ul id="items"></ul>
+    </fieldset>
+
+    <fieldset>
+      <legend>Criar</legend>
+      </br>
+      <input type="text" id="name" placeholder="Nome" />
+      <button id="createButton">Salvar</button>
+      <ul id="items"></ul>
+    </fieldset>
+  </body>
+</html>
