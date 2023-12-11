@@ -15,12 +15,14 @@ function createElement(item) {
   return itemElement;
 }
 
-function error(message) {
+function errorException(message) {
   profileElement.innerHTML = "";
 
   const itemElement = document.createElement("span");
   itemElement.innerHTML = `</br>${message}!`;
   profileElement.appendChild(itemElement);
+
+  throw new Error(message);
 }
 
 function criaListagem(item) {
@@ -38,16 +40,14 @@ async function find() {
     const response = await fetch("https://api.github.com/users/" + usernameElement.value);
 
     if (response.status === 404) {
-      const message = error.message || "Usuário não encontrado!";
-      error(message);
-      throw new Error(message);
+      errorException("Usuário não encontrado!");
     }
 
     const data = await response.json();
     criaListagem(data);
-  } catch (error) {
-    const message = error.message || "Ocorreu um erro ao buscar o usuário...";
-    error(message);
-    throw new Error(message);
+
+  } catch (ex) {
+    console.error("Ocorreu um erro ao buscar o usuário...", {ex});
   }
 }
+

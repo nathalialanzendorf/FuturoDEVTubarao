@@ -1,0 +1,8 @@
+//Configurar um novo projeto
+npx create-react-app my-app
+
+//acessa o pacote
+cd my-app
+
+//
+npm start
