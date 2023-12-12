@@ -6,3 +6,13 @@ cd my-app
 
 //
 npm start
+
+//instalar o vite
+npm create vite@latest
+
+
+// entrar no pacote do projeto e instalar
+npm install
+
+//rodar
+npm run dev
