@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Sum } from './SumComponent'
 import { Div } from './DivComponent'
 import { Sub } from './SubComponent'
@@ -13,3 +14,8 @@ export function Calc({num1, num2}){
         </div>
     )
  }
+
+Calc.propTypes = {
+    num1: PropTypes.number.isRequired,
+    num2: PropTypes.number.isRequired
+}

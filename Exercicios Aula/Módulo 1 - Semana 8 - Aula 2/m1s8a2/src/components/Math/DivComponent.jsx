@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export function Div({num1, num2}){
     let result = num1 / num2
      return(
@@ -6,3 +8,8 @@ export function Div({num1, num2}){
          </div>
      )
  }
+
+Div.propTypes = {
+    num1: PropTypes.number.isRequired,
+    num2: PropTypes.number.isRequired
+};
