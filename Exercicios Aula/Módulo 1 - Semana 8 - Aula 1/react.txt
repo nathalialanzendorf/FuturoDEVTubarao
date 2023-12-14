@@ -1,18 +1,10 @@
-//Configurar um novo projeto
-npx create-react-app my-app
-
-//acessa o pacote
-cd my-app
-
-//
-npm start
-
 //instalar o vite
 npm create vite@latest
 
+//entra no projeto
 
-// entrar no pacote do projeto e instalar
+// instalar dependencias
 npm install
 
-//rodar
+//rodar projeto
 npm run dev

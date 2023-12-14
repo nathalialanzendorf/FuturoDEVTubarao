@@ -20,7 +20,7 @@ function App() {
           <img src={faviconLogo} className="logo favicon" alt="Favicon logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>Módulo 1 - Semana 8 - Aula 1</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
