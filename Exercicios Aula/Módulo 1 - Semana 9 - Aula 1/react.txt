@@ -1,0 +1,23 @@
+//instalar o vite
+npm create vite@latest
+
+//entra no projeto
+
+// instalar dependencias
+npm install
+
+// instalar prop-type
+npm install prop-types
+
+//rodar projeto
+npm run dev
+
+
+// instalar o surge
+npm install --global surge
+
+// buildar o projeto
+npm run build
+
+//deploy
+surge ./build
