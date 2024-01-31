@@ -69,3 +69,10 @@ Hoock
 useState
 useEffect
 useContext
+
+//Bibliotecas de componentes
+Material UI - https://mui.com/material-ui/
+  npm install @mui/material @emotion/react @emotion/styled
+
+chakra - https://chakra-ui.com/docs/components
+  npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
