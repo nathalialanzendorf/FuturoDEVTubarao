@@ -76,3 +76,12 @@ Material UI - https://mui.com/material-ui/
 
 chakra - https://chakra-ui.com/docs/components
   npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
+
+React Hook Form
+ npm install react-hook-form
+
+React Hook Form resolvers (faz a comunicação do form com validador zod)
+ npm install @hookform/resolvers
+
+ Zod validador
+  npm install zod

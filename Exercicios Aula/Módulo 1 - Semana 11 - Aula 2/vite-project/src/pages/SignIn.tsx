@@ -1,25 +1,35 @@
-import { Button, Heading, Input, Stack, useToast, Text, Box, HStack } from '@chakra-ui/react' 
+import { Box, Button, Heading, Input, Stack, useToast, Text, HStack } from '@chakra-ui/react' 
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { z } from 'zod';
 
 export default function SignUp() {
 
   const toast = useToast()
-  // const navigate = useNavigate();
-
+  const navigate = useNavigate();
+    
   function sucess () {
+   toast({
+      title: "Login realizado com sucesso!",
+      description: "Você está pronto para acessar",
+      status: "success",
+      duration: 3000,
+      isClosable: true,
+    })
+  }
+
+  function error () {
     toast({
-       title: "Cadastro realizado com sucesso!",
-       description: "Você está pronto para logar",
-       status: "success",
+       title: "Erro ao realizar o login,",
+       description: "Tente novamente!",
+       status: "error",
        duration: 3000,
        isClosable: true,
      })
    }
 
-  const loginSchem = z.object({
+ const loginSchem = z.object({
     username: z.string()
     .email(
       {message: "O usuário deve ser um e-mail válido"}
@@ -37,7 +47,13 @@ export default function SignUp() {
 
   function submitForm(data: any) {
     console.log(`Usuário: ${data.username} Senha: ${data.password}`);
-    sucess();
+
+    if(data.password === 'admin@' && data.username === 'admin@admin.com'){
+      navigate('/auth/nathalialanzendorf');
+      sucess();
+    }else {
+      error();
+    }
   }
 
   return (
@@ -60,11 +76,12 @@ export default function SignUp() {
               <Button colorScheme="blue">NotFound</Button>
             </Link>
           </HStack>
-      </Stack>
+        </Stack>
+
       <Box as="form" margin="auto" onSubmit={handleSubmit(submitForm)}>
         <Stack w="fit-content">
           <Heading textDecoration="underline">DashDev</Heading>
-          <Heading fontSize={20}>Cadastre-se</Heading>
+          <Heading fontSize={20}>Login</Heading>
           <Input 
             placeholder="Usuário"
             {...register("username") }
@@ -78,10 +95,10 @@ export default function SignUp() {
           <Button
             colorScheme="blue" 
             type='submit'>
-              Salvar
+              SignIn
           </Button>
-        </Stack>
-      </Box>
+          </Stack>
+        </Box>
     </Stack>
   );
-} 
+}

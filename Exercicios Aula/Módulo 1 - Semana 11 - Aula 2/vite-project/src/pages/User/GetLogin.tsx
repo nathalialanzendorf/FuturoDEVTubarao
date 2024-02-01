@@ -1,6 +1,7 @@
-import { Box, Heading, Spinner, Stack, Text } from '@chakra-ui/react';
+import { Box, Button, HStack, Heading, Spinner, Stack, Text } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { FaHeading } from 'react-icons/fa';
+import { Link, useParams } from 'react-router-dom';
 
 interface User {
   login: string,
@@ -18,8 +19,8 @@ export default function GetUser() {
     useEffect(() => {
       async function GetUser(){
         setLoading(true);
-        await timeout(4000);
-        const req = await fetch(`https://api.github.com/users/${username}`);;
+        await timeout(800);
+        const req = await fetch(`https://api.github.com/users/${username}`);
         console.log(req);
         const res = await req.json();
         if (!req.ok) {
@@ -27,6 +28,7 @@ export default function GetUser() {
           setError("usuário não encontrado");
           return;
         }
+        console.log(res);
         setUser(res);
         setLoading(false);
       }
@@ -36,12 +38,35 @@ export default function GetUser() {
 
   return (
     <Stack width="60vw" height="60vh" border="1px">
-      <Box margin="auto">
+    <Stack w="fit-content">
+      <HStack spacing={4}>
+        <Link to="/auth/signIn">
+            <Button colorScheme="blue">SignIn</Button>
+          </Link>
+          <Link to="/auth/signUp">
+            <Button colorScheme="blue">SignUp</Button>
+          </Link>
+          <Link to="/dashboard">
+            <Button colorScheme="blue">Dashboard</Button>
+          </Link>
+          <Link to="/auth/nathalialanzendorf">
+            <Button colorScheme="blue">My github</Button>
+          </Link>
+          <Link to="/notfound">
+            <Button colorScheme="blue">NotFound</Button>
+          </Link>
+        </HStack>
+      </Stack>
+
+      <Box as="form" margin="auto">
         <Stack w="fit-content">
+          <Heading textDecoration="underline">DashDev</Heading>
           {user && (
             <>
-              <Heading>{user?.login}</Heading>
-              <Text>{user.bio}</Text>
+              <Heading fontSize={25}>{user?.name}</Heading>
+              <Text>{user.login}</Text>
+              <img src={user?.avatar_url} alt="Avatar" style={{ width: '100px', height: '100px' }} /> {/* Display avatar image */}
+              
             </>
           )}
           { loading && (
@@ -51,7 +76,7 @@ export default function GetUser() {
                 speed='0.65'
                 emptyColor='gray.200'
                 color='blue.500'
-               size='x1'
+                size='x1'
                 />Carregando...
             </Heading>
           )}
