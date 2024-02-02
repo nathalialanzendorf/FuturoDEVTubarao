@@ -1,0 +1,4 @@
+Instalar
+winget install k6 --source winget
+
+choco install k6
