@@ -88,3 +88,7 @@ React Hook Form resolvers (faz a comunicação do form com validador zod)
 
 Styled components
   npm install styled-components
+
+
+//Ferramentas
+https://vercel.com/
