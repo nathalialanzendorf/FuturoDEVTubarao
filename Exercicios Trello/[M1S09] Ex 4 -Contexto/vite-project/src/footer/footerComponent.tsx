@@ -1,12 +1,14 @@
+import { Box, Heading } from "@chakra-ui/react";
+
 export function FooterComponent() {
 
   return (
     <>
-      <div>
-        <p className="read-the-docs">
+      <Box>
+        <Heading>
           LAB365 - FuturoDEV [Tubarão] - Módulo 1
-        </p>
-        </div>
+        </Heading>
+        </Box>
     </>
   )
 }

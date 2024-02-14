@@ -1,19 +1,18 @@
 import './App.css'
+import { Box } from '@chakra-ui/react'
 import { HeaderComponent } from './header/headerComponent'
-import { BodyComponent } from './body/bodyComponent'
 import { FooterComponent } from './footer/footerComponent'
-import { ThemeContext } from './context/appContext'
+import { BodyComponent } from './body/bodyComponent';
 
 function App() {
 
+
   return (
-    <>
-      <ThemeContext.Provider value={[/* provide the value here */]}>
-        <HeaderComponent />
-        <BodyComponent />
-        <FooterComponent />
-      </ThemeContext.Provider>
-    </>
+    <Box>
+      <HeaderComponent />
+      <BodyComponent />
+      <FooterComponent />
+    </Box>
   )
 }
 

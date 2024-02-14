@@ -1,26 +1,16 @@
+import { Box, Button, Text, useColorMode } from "@chakra-ui/react";
 
-import { useContext } from 'react';
-import { ThemeContext } from '../context/appContext';
-
-  export function BodyComponent() {
-  const { backgroundColor, setBackgroundColor } = useContext(ThemeContext);
-
-  const handleDarkButtonClick = () => {
-    setBackgroundColor('#242424');
-  }
-
-  const handleLightButtonClick= () => {
-    setBackgroundColor('#242424');
-  }
+export function BodyComponent() {
+  const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <>
-        <div style={{ backgroundColor }}>
-          <h1>[M1S09] Ex 1 - UseState</h1>
-          <hr />
-          <button onClick={handleDarkButtonClick}>Mudar Tema Dark</button>
-          <button onClick={handleLightButtonClick}>Mudar Tema Light</button>
-        </div>
-    </>
+    <Box>
+      <Button onClick={toggleColorMode}>
+        Mudar o Tema
+      </Button>
+      <Text>
+        Tema atual: {colorMode === 'light' ? 'Claro' : 'Escuro'}
+      </Text>
+    </Box>
   )
 }
