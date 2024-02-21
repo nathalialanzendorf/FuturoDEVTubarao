@@ -77,6 +77,11 @@ Material UI - https://mui.com/material-ui/
 chakra - https://chakra-ui.com/docs/components
   npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
 
+tailwindcss - https://tailwindcss.com/
+
+
+
+
 React Hook Form
  npm install react-hook-form
 
